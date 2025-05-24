@@ -4,7 +4,7 @@ import { setRoomId, setParticipants, setSocketId } from '../store/actions';
 import * as webRTCHandler from './webRTCHandler';
 import { appendNewMessageToChatHistory } from './directMessages';
 
-const SERVER = 'http://localhost:5002';
+const SERVER = 'https://backend-1qa8.onrender.com';
 
 let socket = null;
 
