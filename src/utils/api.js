@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const serverApi = 'http://localhost:5002';
+const serverApi = 'https://backend-1qa8.onrender.com';
 
 axios.defaults.withCredentials = true;
 
