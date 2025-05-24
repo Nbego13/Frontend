@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const serverApi = 'https://backend-1qa8.onrender.com';
+const serverApi = "https://backend-1qa8.onrender.com";
 
 axios.defaults.withCredentials = true;
 
@@ -15,7 +15,7 @@ export const getRoomExists = async (roomId) => {
 
 // function to check if turn credentials exist
 export const getTURNCredentials = async () => {
-    const response = await axios.get(`${serverApi}/api/get-turn-credentials`);
+    const response = await axios.get(`${serverApi}/get-turn-credentials`);
     return response.data;
     
 };
