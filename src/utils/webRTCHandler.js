@@ -235,7 +235,7 @@ const getAudioOnlyLabel = (identity = '') => {
 /////////////////////////////////////// Buttons /////////////////////////////////////////////
 
 export const toggleMic = (isMuted) => {
-    localStream.getAudioTracks()[0].enable = isMuted ? true : false;
+    localStream.getAudioTracks()[0].enabled = isMuted ? true : false;
 };
 
 export const toggleCamera = (isDisabled) => {
