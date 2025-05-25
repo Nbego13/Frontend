@@ -549,7 +549,7 @@ video {
   margin-right: 5px;
 }
 
-.copy_url_button {
+.copy_room_id_button {
   height: 60px;
   padding: 0 30px;
   font-size: 17px;
@@ -567,7 +567,7 @@ video {
   justify-content: center;
 }
 
-.copy_url_button:hover {
+.copy_room_id_button:hover {
   background: linear-gradient(168.68deg, #0045b3 1.12%, #087cc1 100%);
   box-shadow: 0px 4px 25px black;
   transform: scale(1.05);
