@@ -191,16 +191,16 @@ const addStream = (stream, connUserSocketId) => {
         videoElement.play();
     };
 
-    videoElement.addEventListener("click", () => {
-        if (videoElement.classList.contains("full_screen")) {
-            videoElement.classList.remove("full_screen");
+  videoElement.addEventListener("click", () => {
+  const isFullscreen = videoElement.classList.toggle("full_screen");
 
-        } else {
-            videoElement.classList.add("full_screen");
+  // Find all audio-only labels
+  const labels = document.querySelectorAll('.label_only_audio_container');
 
-            
-        }
-    });
+  labels.forEach(label => {
+    label.style.display = isFullscreen ? "none" : "flex";
+  });
+});
 
     videoContainer.appendChild(videoElement);
 
