@@ -16,7 +16,7 @@
   /*background-color: white; */    
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -27,7 +27,6 @@
 .chat_label_paragraph {      /* 40    16*/
   font-weight: 700;
   color: white;
-  margin-left: 160px;
   font-size: 20px;
 }
 
@@ -200,7 +199,7 @@
 .participants_label_container {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -212,7 +211,6 @@
 .participants_label_paragraph {
   font-weight: 700;
   color: white;
-  margin-left: 120px;
   font-size: 20px;
 }
 
