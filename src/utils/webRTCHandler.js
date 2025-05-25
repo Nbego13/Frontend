@@ -202,13 +202,21 @@ const addStream = (stream, connUserSocketId) => {
   videoElement.addEventListener("click", () => {
   const isFullscreen = videoElement.classList.toggle("full_screen");
 
-  // Find all audio-only labels
-  const labels = document.querySelectorAll('.label_only_audio_container');
+  // Find all video elements except the clicked one
+  const allVideos = document.querySelectorAll("#videos_portal video");
+  allVideos.forEach(vid => {
+    if (vid !== videoElement) {
+      vid.style.display = isFullscreen ? "none" : "block";
+    }
+  });
 
+  // Show/hide audio-only labels
+  const labels = document.querySelectorAll('.label_only_audio_container');
   labels.forEach(label => {
     label.style.display = isFullscreen ? "none" : "flex";
   });
 });
+
 
 
 
