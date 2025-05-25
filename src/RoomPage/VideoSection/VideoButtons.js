@@ -4,7 +4,7 @@ import CameraButton from "./CameraButton";
 import LeaveRoomButton from "./LeaveRoomButton";
 import SwitchToScreenSharingButton from "./SwitchToScreenSharingButton";
 import { connect } from "react-redux";
-import CopyUrlButton from "./CopyUrlButton";
+import CopyRoomIdButton from "./CopyRoomIdButton";
 
 const VideoButtons = (props) => {
 const {connectOnlyWithAudio} = props;
@@ -15,7 +15,7 @@ const {connectOnlyWithAudio} = props;
             {!connectOnlyWithAudio && <CameraButton />}
             <LeaveRoomButton />
             {!connectOnlyWithAudio && <SwitchToScreenSharingButton />}
-            <CopyUrlButton />
+            <CopyRoomIdButton roomId={props.roomId} />
         </div>
     );
 };
