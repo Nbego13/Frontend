@@ -198,7 +198,7 @@ const addStream = (stream, connUserSocketId) => {
         } else {
             videoElement.classList.add("full_screen");
 
-            videoElement.focus();
+            
         }
     });
 
