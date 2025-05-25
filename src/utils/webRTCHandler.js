@@ -8,8 +8,8 @@ import Peer from 'simple-peer/simplepeer.min.js';
 const defaultConstraints = {
     audio: true,
     video: {
-        width: '1280',
-        height: '720',
+        width: '420',
+        height: '360',
     },
 };
 
