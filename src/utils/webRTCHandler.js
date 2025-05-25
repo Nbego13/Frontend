@@ -191,6 +191,14 @@ const addStream = (stream, connUserSocketId) => {
         videoElement.play();
     };
 
+    /*videoElement.addEventListener("click", () => {
+        if (videoElement.classList.contains("full_screen")) {
+            videoElement.classList.remove("full_screen");
+
+        } else {
+            videoElement.classList.add("full_screen");
+        }
+    });*/
   videoElement.addEventListener("click", () => {
   const isFullscreen = videoElement.classList.toggle("full_screen");
 
@@ -201,6 +209,10 @@ const addStream = (stream, connUserSocketId) => {
     label.style.display = isFullscreen ? "none" : "flex";
   });
 });
+
+
+
+
 
     videoContainer.appendChild(videoElement);
 
