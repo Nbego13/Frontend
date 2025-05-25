@@ -26,7 +26,7 @@
 
 .chat_label_paragraph {      /* 40    16*/
   font-weight: 700;
-  color: #9ca5ab;
+  color: white;
   margin-left: 160px;
   font-size: 20px;
 }
@@ -211,7 +211,7 @@
 
 .participants_label_paragraph {
   font-weight: 700;
-  color: #9ca5ab;
+  color: white;
   margin-left: 120px;
   font-size: 20px;
 }
