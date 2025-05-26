@@ -568,3 +568,22 @@ video {
   box-shadow: 0px 4px 25px black;
   transform: scale(1.05);
 }
+
+
+.screen_record_button {
+  margin-left: 25px;
+  padding: 8px 16px;
+  background-color: #10b981; /* green when idle */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.screen_record_button.recording {
+  background-color: #dc2626; /* red when recording */
+}
+
+
